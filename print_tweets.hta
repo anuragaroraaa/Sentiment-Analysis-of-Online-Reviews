@@ -1,0 +1,33 @@
+<html>
+<head>
+
+<body>
+ <script type="text/javascript">
+
+
+var fso=new ActiveXObject("Scripting.FileSystemObject");
+
+var fh=fso.OpenTextFile("E:\\dist\\twitDB46.txt",1)
+
+lini=fh.ReadAll();
+document.write("<table border=3 bordercolor=\"orange\" cellpadding=\"25\" cellspacing=\"5\" style=\"width:100%;height:10%;\" align=\"center\">");
+var lines = lini.split("\n");
+
+
+    for(var line = 0; line < lines.length; line++){
+	document.write("<tr>" );
+	var tweet=lines[line];
+	var twee=[];
+	twee=tweet.split(":");
+	document.write("<td>" + twee + "</td>");
+	
+	
+	
+    document.write("</tr>" );
+       
+      }
+document.write("</table>")
+
+</script>
+</body>
+</html>

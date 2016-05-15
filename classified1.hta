@@ -1,0 +1,88 @@
+<html>
+             <head>
+ <style type='text/css'>
+  .bold-green-font {
+    font-weight: bold;
+    color: green;
+  }
+
+  .bold-font {
+    font-weight: bold;
+  }
+
+  .right-text {
+    text-align: right;
+  }
+
+  .large-font {
+    font-size: 15px;
+  }
+
+  .italic-darkblue-font {
+    font-style: italic;
+    color: darkblue;
+  }
+
+  .italic-purple-font {
+    font-style: italic;
+    color: purple;
+  }
+
+  .underline-blue-font {
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .gold-border {
+    border: 3px solid gold;
+  }
+
+  .deeppink-border {
+    border: 3px solid deeppink;
+  }
+
+  .orange-background {
+    background-color: orange;
+  }
+
+  .orchid-background {
+    background-color: orchid;
+  }
+
+  .beige-background {
+    background-color: beige;
+  }
+
+</style>
+  
+             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+             <script type="text/javascript">
+             google.charts.load('current', {'packages':['table']});
+             google.charts.setOnLoadCallback(drawTable);
+function drawTable() {
+var cssClassNames = {
+    'headerRow': 'italic-darkblue-font large-font bold-font',
+    'tableRow': '',
+    'oddTableRow': 'beige-background',
+    'selectedTableRow': 'orange-background large-font',
+    'hoverTableRow': '',
+    'headerCell': 'gold-border',
+    'tableCell': '',
+    'rowNumberCell': 'underline-blue-font'};
+
+  var options = {'showRowNumber': true, 'allowHtml': true, 'cssClassNames': cssClassNames};
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Sentiment');
+        data.addColumn('string', 'Tweet');
+        data.addRows([['NEUTRAL','Focused PM Modi leads by example: FM Arun Jaitley... https:\/\/t.co\/iI2kr0Ka0T https:\/\/t.co\/bAOB30WqV6'],['NEUTRAL','Modi Sarkar looses ground in year 2: ET Magazine-MavenMagnet study - The Econom... https:\/\/t.co\/IHsFtP3Hrc @Raghsaa @ndadhich'],['NEGATIVE','RT @4ushashishekhar: Highest ever return by RBI to govt. Thats the effectiveness of Modi Sarkar #NamoDevelopingIndia https:\/\/t.co\/aIGQMMb'],['NEUTRAL','RT @DrunkVinodMehta: Amit Shah uses SriLankan photo from an old magazine to defend Modis Somalia jibe, causes more embarrassment. https:\/'],['NEGATIVE','RT @iAnkitaLal: #NaMoDevelopingIndia Stalled projects restarted under Modi Govt https:\/\/t.co\/YLz1Z6LlEk'],['POSITIVE','? @narendramodi @BarackObamahttps:\/\/t.co\/gEQ2Wy5x7n https:\/\/t.co\/5uJQykfCee'],['NEUTRAL','PM extremely hard working, leads by example, says @arunjaitley  #NaMoDevelopingIndia @narendramodi @Pmoindia  https:\/\/t.co\/NnEWO0VXix'],['NEUTRAL','RT @NewsX: Focused PM Modi leads by example: Arun Jaitley @arunjaitley @narendramodi https:\/\/t.co\/DE4brNqDlA'],['NEUTRAL','Dont accept his apology! He should be punished for not retweeting any of useful tweet of you perody a\/c @TrollKejri https:\/\/t.co\/vRifliteW1'],['NEUTRAL','@TheElectionNews India eases red tape but foreign firms still struggle: Modi took power after ... https:\/\/t.co\/oGBa3Sj9ai #Elections2014'],['NEGATIVE','RT ShivshankarS: Two years of Narendra #Modi :Electricity, bank accounts for the poor help keep PMpopular. https:\/\/t.co\/ya76a6iLi0'],['NEUTRAL','RT @rajendrasdesai1: What in Hells name is Entire Political Science Does it mean Jumlas Lying BS etc was learnt by Modi at Gujarat Univ'],['POSITIVE','@SueshAlbela @iSanjivBharti @ZubinaAhmad @vibhask1 @shapendra @Swwagatam @YesIamSaffron @ALKAAGARWAL9 https:\/\/t.co\/cvGxadtEUz'],['NEUTRAL','Focused PM Modi leads by example: FM Arun Jaitley... https:\/\/t.co\/noqxoWnwqo https:\/\/t.co\/2S2VB7FQRH'],['NEUTRAL','RT @sagenaradamuni: How Modis ministers are working on critical mandates of economic strategy and national security #TransformingIndia htt'],['NEUTRAL','RT @AashaBisht: And this is our honourable PM @narendramodi unaffected by vicious venomous propaganda!!More power to Mr Modi!! https:\/\/t.c'],['NEGATIVE','RT @4ushashishekhar: Highest ever return by RBI to govt. Thats the effectiveness of Modi Sarkar #NamoDevelopingIndia https:\/\/t.co\/aIGQMMb'],['NEGATIVE','#NaMoDevelopingIndia Modi Magic miracle'],['NEUTRAL','RT @rajendrasdesai1: While Modi is putting all The Oil wealth and Govt Largesse in the lined pockets of two Guju Businessmen rest of the In'],['NEUTRAL','RT @srirambjp: PM Modis sound and sensible plan could lead to an economic recovery#NaMoDevelopingIndia https:\/\/t.co\/uf3MOlLGgO via The'],['POSITIVE','RT @kumararyan86: I received Birthday Greetings directly from PM Narendra Modi.You can get one too, sign up at https:\/\/t.co\/xZoZ3dtU9i http'],['NEUTRAL','After Pakistan, Afghanistan shows no interest in Narendra Modis satellite project: However, Sri Lanka, Bhuta... https:\/\/t.co\/B73j2Qke8D'],['NEUTRAL','RT @sharmanagendar: With a speech every 45.6 hours, has Modi exhausted his talk-time? https:\/\/t.co\/R2CWAqnMZ7 via @scroll_in'],['NEGATIVE','RT @ShivshankarS: Two years of Narendra #Modi :Electricity, bank accounts for the poor help keep PMpopular.https:\/\/t.co\/XPgDVbHFyh https:'],['NEUTRAL','RT @ExSecular: After nearly two years in office, there are signs the Modi gov is really transforming India https:\/\/t.co\/6Ln5CcLKq8 #NaMoD'],['NEUTRAL','UAE issues travel ban on PM Modi after Kerala-Somalia comparison, demands apology @abpnewstv @OfficeOfRG @aajtak https:\/\/t.co\/SpRGDiRpcV'],['NEUTRAL','RT @MalikAshok: Re-plug: Modi govt ends year 2 better placed than at any point in year 2. My piece for @EconomicTimes https:\/\/t.co\/2ENFV2q7'],['NEUTRAL','RT @NaIna0806: Modi Govts First Year Emerges As Golden Era Of Indian Defence Development  via NWI https:\/\/t.co\/VIdbhBizAO#NaMoDevelopingI'],['NEUTRAL','RT @BJYMAhmedabad: Modi govt has increased monthly pension for 30lakh labourers from Rs 15-100 to min Rs 1000\/month. #TransformingIndia htt'],['NEUTRAL','140 characters is not sufficient to describe the achievement of Modi  Gov. All i can say opp. found only - fault#NaMoDevelopingIndia'],['NEUTRAL','RT @SShivam34: #NaMoDevelopingIndia -  After nearly 2 yrs in office, there are signs the Modi govt is really transforming India. https:\/\/t.'],['POSITIVE','Its Indias satellite not Modis satellite. https:\/\/t.co\/flWGpWeSb5'],['POSITIVE','RT @TrollKejri: My Condition after asking Modi degree https:\/\/t.co\/xPqZCUzZ9B'],['NEUTRAL','@timesofindia Special Status to Andhra Pradesh State is badly needed Hope Modi Sir will full fill his promises. We need support from press.'],['NEUTRAL','Focused PM Modi leads by example: FM Arun Jaitley... https:\/\/t.co\/KAviUOWvKM https:\/\/t.co\/TFxfOqPqBK'],['POSITIVE','RT @TheRevoltPress:            https:\/\/t.co\/BIbxS7OVmM'],['POSITIVE','Modi -  Camera #CholiDamanKaSaath'],['NEUTRAL','RT @sagenaradamuni: PM extremely hard working, leads by example, says @arunjaitley  #NaMoDevelopingIndia @narendramodi @Pmoindia  https:'],['NEUTRAL','RT @one_by_two: 2 years of Modi Govt.Are you happy ??'],['NEUTRAL','"Dear Modi Ji!A great opportunity to serve the nation!People look forward to you for justice to Asaram Bapu Ji #_AgainstInjustice"'],['POSITIVE','RT @Sid4india: All Hindu haters like #Congress party with d help of foreign terrorist like ISIS, wanted to create problem 4 Modi. https:\/\/t'],['NEUTRAL','Amit Shahs defence of Modis Somalia-Kerala remark ends up embarrassing Outlook magazine https:\/\/t.co\/InltnJiqSO'],['NEUTRAL','Amit Shahs defence of Modis Somalia-Kerala remark ends up embarrassing Outlook magazine https:\/\/t.co\/dMvkrDRzcI'],['POSITIVE','RT @DrSinghAnuj: Schemes like #StandUpIndia by NaMo will transform lives of  Dalits and tribals. #NaMoDevelopingIndia https:\/\/t.co\/f3GkTpB'],['NEUTRAL','Online conversations point to doubts over Modi sarkar in year 2: ET Magazine-MavenMagnet study #NaMoDevelopingIndia https:\/\/t.co\/9vN8eFaqrF'],['NEUTRAL','Online conversations point to doubts over Modi sarkar in year 2: ET Magazine-MavenMagnet study #NaMoDevelopingIndia https:\/\/t.co\/wPwBiaK0Ol'],['NEUTRAL','RT @Pune16Sanjay: Knowledge is immortal and is relevant in every era: PM Modihttps:\/\/t.co\/awCrbyt10D#NaMoDevelopingIndia'],['NEUTRAL','RT @DrunkVinodMehta: Amit Shah uses SriLankan photo from an old magazine to defend Modis Somalia jibe, causes more embarrassment. https:\/'],['NEUTRAL','RT BhaktonKaKaal: Hey queen of Dumbs i.e madhukishwar , Sonia didnt ever lied abt her qualification unlike modi,  https:\/\/t.co\/n0jcZ89eFq'],['NEUTRAL','Focused PM Modi leads by example: FM Arun Jaitley... https:\/\/t.co\/GSGbgEPvH0 https:\/\/t.co\/lWs3nK3kTF'] ]);
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+      }
+    </script>
+  </head>
+  <body>
+    <div id="table_div"></div>
+  </body>
+</html>

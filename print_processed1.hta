@@ -1,0 +1,18 @@
+<html>
+   <head>
+     <title>TEST</title>
+     <hta:application scroll="no" windowState="normal">
+  </head>
+  <script language="VBScript">
+     sub Window_onLoad()
+     set oFSO=CreateObject("Scripting.FileSystemObject")
+     set oFile=oFSO.OpenTextFile("classified.txt",1)
+     text=oFile.ReadAll
+     document.all.ScriptArea.value=text
+     oFile.Close
+     end sub
+  </script>
+  <body>
+     <textarea name="ScriptArea" rows=50 cols=240></textarea><p>
+   </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+
+<body>
+ <script type="text/javascript">
+
+
+var fso=new ActiveXObject("Scripting.FileSystemObject");
+
+var fh=fso.OpenTextFile("E:\\dist\\sentence_classified.txt",1)
+
+lini=fh.ReadAll();
+document.write("<table border=3 bordercolor=\"green\" cellpadding=\"25\" cellspacing=\"5\" style=\"width:100%;height:10%;color:black\" align=\"center\">");
+var lines = lini.split("\n");
+
+
+    for(var line = 0; line < 1; line++){
+	document.write("<tr>" );
+	var tweet=lines[line];
+	var twee=[];
+	twee=tweet.split(":");
+	document.write("<td>" + twee[0] + "</td>");
+	document.write("<td>" + twee[1] + "</td>");
+	
+	
+    document.write("</tr>" );
+       
+      }
+document.write("</table>")
+
+</script>
+</body>
+</html>

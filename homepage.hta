@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<style>
+.simple
+{
+	color:black;font-family: Britannic;text-transform: capitalize; font-style: Italic Bold;
+	
+}
+.common
+{
+	color:#1155CC;font-family: Britannic;text-transform: capitalize; font-style: Italic Bold;
+	
+}
+a {
+color:#5e7f9e;
+font-size:50px;
+text-transform: capitalize;
+font-family: "Hobo Std";
+
+font-style: Italic Bold;
+
+}
+
+a:LINK{
+color: blue;
+}
+a:HOVER {
+	color: red;
+}
+a:ACTIVE{
+	color: orange;
+}
+a:VISITED{
+	color: green;
+}
+
+</style>
+<head><title>Sentiment Analysis Of Online Reviews</title>
+<meta http-equiv="x-ua-compatible" content="ie=9">
+<script language="JavaScript" type="text/javascript">  
+         MyObject = new ActiveXObject( "WScript.Shell" )  
+         function RunPie()   
+         {  
+           
+	shell = new ActiveXObject("WScript.shell");
+	shell.run("feedback.hta");
+        }  
+</script>
+</head>
+<HTA:APPLICATION
+	APPLICATIONNAME="Sentiment Analysis Of Online Reviews"
+	scroll="yes"
+	
+	caption="yes"
+	windowState="maximize"
+>
+<body bgcolor=yellow>
+<div class="common" align="center"><h1>sentiment Analysis Of Online Reviews</h1></div>
+<div><h1><a href="about.hta" style="text-decoration: none">About</a></h1></div>
+<div><h1><a href="feedback.hta" target="_self" style="text-decoration: none">Feedback</a></h1></div>
+</body>
+</html>
